@@ -58,7 +58,9 @@ async def main():
   # crawl exit geolocation
   for key, stop in mtrStops.items():
     q = '港鐵' + stop['name_tc'] + '站進出口'
-    r = await emitRequest("https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=" + q, a_client)
+    r = await emitRequest("https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=" + q, a_client, headers={
+        "User-Agent": ""  # python-httpx/0.25.2 is blocked
+    })
     for char in string.ascii_uppercase:
       q = '港鐵' + stop['name_tc'] + '站-' + str(char) + '進出口'
       checkResult(r.json(), q, stop, char, str(char) in stop)
