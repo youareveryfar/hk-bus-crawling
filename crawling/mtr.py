@@ -52,7 +52,9 @@ async def getRouteStop(co='mtr'):
     routeList[route + "_" + bound]["dest_en"] = eng
     routeList[route + "_" + bound]["stops"][int(float(seq))] = stopCode
     if stopCode not in stopList:
-      r = await emitRequest('https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=港鐵' + chn + "站", a_client, headers={'Accept': 'application/json'})
+      r = await emitRequest('https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q=港鐵' + chn + "站", a_client, headers={'Accept': 'application/json',
+                                                                                                                       'User-Agent': ''  # python-httpx/0.25.2 is blocked
+                                                                                                                       })
       lat, lng = epsgTransformer.transform(r.json()[0]['y'], r.json()[0]['x'])
       stopList[stopCode] = {
           "stop": stopCode,

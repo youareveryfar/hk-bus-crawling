@@ -75,8 +75,10 @@ async def getRouteStop(co='lightRail'):
       lightRailObject["stops"].append(lightRailId)
 
     if lightRailId not in stopList:
-      url = f'https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q={chn}輕鐵站'
-      r = await emitRequest(url, a_client, headers={'Accept': 'application/json'})
+      url = f'https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q={chn}輕鐵站'
+      r = await emitRequest(url, a_client, headers={'Accept': 'application/json',
+                                                    'User-Agent': ''  # python-httpx/0.25.2 is blocked
+                                                    })
       try:
         lat, lng = epsgTransformer.transform(
             r.json()[0]['y'], r.json()[0]['x'])
