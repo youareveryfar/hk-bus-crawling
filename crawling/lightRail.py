@@ -34,7 +34,8 @@ async def fetch_csv_text(url: str, client: httpx.AsyncClient, retries: int = 2) 
       r = await emitRequest(url, client)
       return r.text
     except Exception as e:
-      logging.getLogger(__name__).warning("Failed to fetch %s (attempt %d): %s", url, attempt + 1, e)
+      logging.getLogger(__name__).warning(
+          "Failed to fetch %s (attempt %d): %s", url, attempt + 1, e)
       if attempt == retries:
         raise
       await asyncio.sleep(1)
@@ -51,15 +52,16 @@ async def getRouteStop(co='lightRail'):
   routeCollection = set()
 
   csv_urls = [
-    'https://opendata.mtr.com.hk/data/light_rail_routes_and_stops.csv',
-    'https://notice.hkbus.app/special2_light_rail_routes_and_stops.csv'
+      'https://opendata.mtr.com.hk/data/light_rail_routes_and_stops.csv',
+      'https://notice.hkbus.app/special2_light_rail_routes_and_stops.csv'
   ]
 
   for url in csv_urls:
     try:
       text = await fetch_csv_text(url, a_client)
     except Exception:
-      logging.getLogger(__name__).warning("Skipping CSV source after repeated failures: %s", url)
+      logging.getLogger(__name__).warning(
+          "Skipping CSV source after repeated failures: %s", url)
       continue
 
     reader = csv.reader(text.splitlines())
@@ -105,7 +107,7 @@ async def getRouteStop(co='lightRail'):
         lookup_url = f'https://www.map.gov.hk/gs/api/v1.0.0/locationSearch?q={chn}輕鐵站'
         try:
           r = await emitRequest(lookup_url, a_client, headers={'Accept': 'application/json',
-                                                              'User-Agent': ''})
+                                                               'User-Agent': ''})
           j = r.json()
           if not j:
             raise ValueError("empty result")
@@ -118,7 +120,9 @@ async def getRouteStop(co='lightRail'):
               "long": lng
           }
         except Exception:
-          logging.getLogger(__name__).exception("Error parsing or geocoding %s: %s", lookup_url, getattr(r, "text", ""))
+          logging.getLogger(__name__).exception(
+              "Error parsing or geocoding %s: %s", lookup_url, getattr(
+                  r, "text", ""))
           # continue without raising; some stops may be missing geo info
 
   # Write outputs
