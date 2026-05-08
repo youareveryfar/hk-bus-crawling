@@ -201,7 +201,7 @@ class HKEta:
 
   def lightrail(self, stop_id, route, dest):
     platform_list = requests.get(
-        "https://rt.data.gov.hk/v1/transport/mtr/lrt/getSchedule?station_id={}".format(stop_id[2:])).json()["platform_list"]
+        "https://rt.data.gov.hk/v1/transport/mtr/lrt/getSchedule?station_id={}&with_special=1".format(stop_id[2:])).json()["platform_list"]
     ret = []
     for platform in platform_list:
       route_list, platform_id = platform["route_list"], platform["platform_id"]
