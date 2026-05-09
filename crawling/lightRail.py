@@ -53,7 +53,12 @@ async def getRouteStop(co='lightRail'):
 
   csv_urls = [
       'https://opendata.mtr.com.hk/data/light_rail_routes_and_stops.csv',
-      'https://notice.hkbus.app/special2_light_rail_routes_and_stops.csv'
+      'https://notice.hkbus.app/handmade_data/lightRail/751P.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/901.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/902.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/903.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/904.csv',
+      'https://notice.hkbus.app/handmade_data/lightRail/905.csv'
   ]
 
   for url in csv_urls:
