@@ -18,7 +18,7 @@ jobs:
       ALPHA_BRANCH_NAME: alpha
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -46,7 +46,7 @@ jobs:
           fi
 
       - name: Setup Python environment
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
             python-version: '3.12'
             architecture: 'x64'
@@ -91,7 +91,7 @@ jobs:
           md5sum routeFareList.alpha.min.json | cut -f1 -d ' ' | tr -d $'\n' > routeFareList.alpha.md5
 
       - name: Archive crawling outputs
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: Crawled Files
