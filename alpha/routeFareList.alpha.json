@@ -64204,7 +64204,6 @@
                 "5.2",
                 "5.2",
                 "5.2",
-                "5.2",
                 "5.2"
             ],
             "faresHoliday": null,
@@ -64232,12 +64231,11 @@
                 "zh": "\u5927\u57d4\u589f"
             },
             "route": "21A",
-            "seq": 6,
+            "seq": 5,
             "serviceType": 1,
             "stops": {
                 "gmb": [
                     "20001200",
-                    "20001242",
                     "20001196",
                     "20002524",
                     "20008430",
@@ -182235,6 +182233,50 @@
                 ]
             }
         },
+        "506P*+1+Tuen Mun Ferry Pier+Siu Hong": {
+            "bound": {
+                "lightRail": "O"
+            },
+            "co": [
+                "lightRail"
+            ],
+            "dest": {
+                "en": "Siu Hong",
+                "zh": "\u5146\u5eb7"
+            },
+            "fares": null,
+            "faresHoliday": null,
+            "freq": null,
+            "gtfsId": null,
+            "jt": null,
+            "nlbId": null,
+            "orig": {
+                "en": "Tuen Mun Ferry Pier",
+                "zh": "\u5c6f\u9580\u78bc\u982d"
+            },
+            "route": "506P*",
+            "seq": 15,
+            "serviceType": "1",
+            "stops": {
+                "lightRail": [
+                    "LR001",
+                    "LR010",
+                    "LR015",
+                    "LR020",
+                    "LR030",
+                    "LR040",
+                    "LR050",
+                    "LR060",
+                    "LR295",
+                    "LR300",
+                    "LR310",
+                    "LR320",
+                    "LR330",
+                    "LR340",
+                    "LR100"
+                ]
+            }
+        },
         "507+1+Ma Sik Road +Fanling Station (Circular)": {
             "bound": {
                 "gmb": "O"
@@ -182422,6 +182464,54 @@
                     "LR160",
                     "LR150",
                     "LR140"
+                ]
+            }
+        },
+        "507P*+1+Siu Hong+Tuen Mun Ferry Pier": {
+            "bound": {
+                "lightRail": "O"
+            },
+            "co": [
+                "lightRail"
+            ],
+            "dest": {
+                "en": "Tuen Mun Ferry Pier",
+                "zh": "\u5c6f\u9580\u78bc\u982d"
+            },
+            "fares": null,
+            "faresHoliday": null,
+            "freq": null,
+            "gtfsId": null,
+            "jt": null,
+            "nlbId": null,
+            "orig": {
+                "en": "Siu Hong",
+                "zh": "\u5146\u5eb7"
+            },
+            "route": "507P*",
+            "seq": 19,
+            "serviceType": "1",
+            "stops": {
+                "lightRail": [
+                    "LR100",
+                    "LR120",
+                    "LR130",
+                    "LR140",
+                    "LR150",
+                    "LR160",
+                    "LR212",
+                    "LR220",
+                    "LR230",
+                    "LR075",
+                    "LR070",
+                    "LR295",
+                    "LR280",
+                    "LR270",
+                    "LR265",
+                    "LR260",
+                    "LR250",
+                    "LR240",
+                    "LR001"
                 ]
             }
         },
@@ -249146,6 +249236,46 @@
                 ]
             }
         },
+        "720*+1+Siu Hong+Tin Wing": {
+            "bound": {
+                "lightRail": "O"
+            },
+            "co": [
+                "lightRail"
+            ],
+            "dest": {
+                "en": "Tin Wing",
+                "zh": "\u5929\u69ae"
+            },
+            "fares": null,
+            "faresHoliday": null,
+            "freq": null,
+            "gtfsId": null,
+            "jt": null,
+            "nlbId": null,
+            "orig": {
+                "en": "Siu Hong",
+                "zh": "\u5146\u5eb7"
+            },
+            "route": "720*",
+            "seq": 11,
+            "serviceType": "1",
+            "stops": {
+                "lightRail": [
+                    "LR100",
+                    "LR350",
+                    "LR360",
+                    "LR370",
+                    "LR380",
+                    "LR425",
+                    "LR445",
+                    "LR448",
+                    "LR460",
+                    "LR490",
+                    "LR500"
+                ]
+            }
+        },
         "720+1+Central (Macao Ferry)+Sai Wan Ho (Grand Promenade)": {
             "bound": {
                 "ctb": "I"
@@ -260104,6 +260234,62 @@
                     "20015421",
                     "20015422",
                     "20015423"
+                ]
+            }
+        },
+        "751*+1+Tin Yat+Tuen Mun Ferry Pier": {
+            "bound": {
+                "lightRail": "O"
+            },
+            "co": [
+                "lightRail"
+            ],
+            "dest": {
+                "en": "Tuen Mun Ferry Pier",
+                "zh": "\u5c6f\u9580\u78bc\u982d"
+            },
+            "fares": null,
+            "faresHoliday": null,
+            "freq": null,
+            "gtfsId": null,
+            "jt": null,
+            "nlbId": null,
+            "orig": {
+                "en": "Tin Yat",
+                "zh": "\u5929\u9038"
+            },
+            "route": "751*",
+            "seq": 27,
+            "serviceType": "1",
+            "stops": {
+                "lightRail": [
+                    "LR550",
+                    "LR480",
+                    "LR468",
+                    "LR490",
+                    "LR500",
+                    "LR455",
+                    "LR450",
+                    "LR435",
+                    "LR430",
+                    "LR425",
+                    "LR380",
+                    "LR370",
+                    "LR360",
+                    "LR350",
+                    "LR100",
+                    "LR090",
+                    "LR080",
+                    "LR075",
+                    "LR070",
+                    "LR295",
+                    "LR280",
+                    "LR270",
+                    "LR265",
+                    "LR260",
+                    "LR250",
+                    "LR240",
+                    "LR001"
                 ]
             }
         },
@@ -309689,198 +309875,6 @@
                 ]
             }
         },
-        "901+1+Tin Yat+Siu Hong": {
-            "bound": {
-                "lightRail": "O"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Tin Yat",
-                "zh": "\u5929\u9038"
-            },
-            "route": "901",
-            "seq": 15,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR550",
-                    "LR480",
-                    "LR468",
-                    "LR490",
-                    "LR500",
-                    "LR455",
-                    "LR450",
-                    "LR435",
-                    "LR430",
-                    "LR425",
-                    "LR380",
-                    "LR370",
-                    "LR360",
-                    "LR350",
-                    "LR100"
-                ]
-            }
-        },
-        "902+1+Siu Hong+Tuen Mun Ferry Pier": {
-            "bound": {
-                "lightRail": "I"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Tuen Mun Ferry Pier",
-                "zh": "\u5c6f\u9580\u78bc\u982d"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "route": "902",
-            "seq": 19,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR100",
-                    "LR120",
-                    "LR130",
-                    "LR140",
-                    "LR150",
-                    "LR160",
-                    "LR212",
-                    "LR220",
-                    "LR230",
-                    "LR075",
-                    "LR070",
-                    "LR295",
-                    "LR280",
-                    "LR270",
-                    "LR265",
-                    "LR260",
-                    "LR250",
-                    "LR240",
-                    "LR001"
-                ]
-            }
-        },
-        "902+1+Tin Yat+Siu Hong": {
-            "bound": {
-                "lightRail": "O"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Tin Yat",
-                "zh": "\u5929\u9038"
-            },
-            "route": "902",
-            "seq": 15,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR550",
-                    "LR480",
-                    "LR468",
-                    "LR490",
-                    "LR500",
-                    "LR455",
-                    "LR450",
-                    "LR435",
-                    "LR430",
-                    "LR425",
-                    "LR380",
-                    "LR370",
-                    "LR360",
-                    "LR350",
-                    "LR100"
-                ]
-            }
-        },
-        "903+1+Tin Yat+Tuen Mun Ferry Pier": {
-            "bound": {
-                "lightRail": "O"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Tuen Mun Ferry Pier",
-                "zh": "\u5c6f\u9580\u78bc\u982d"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Tin Yat",
-                "zh": "\u5929\u9038"
-            },
-            "route": "903",
-            "seq": 27,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR550",
-                    "LR480",
-                    "LR468",
-                    "LR490",
-                    "LR500",
-                    "LR455",
-                    "LR450",
-                    "LR435",
-                    "LR430",
-                    "LR425",
-                    "LR380",
-                    "LR370",
-                    "LR360",
-                    "LR350",
-                    "LR100",
-                    "LR090",
-                    "LR080",
-                    "LR075",
-                    "LR070",
-                    "LR295",
-                    "LR280",
-                    "LR270",
-                    "LR265",
-                    "LR260",
-                    "LR250",
-                    "LR240",
-                    "LR001"
-                ]
-            }
-        },
         "904+1+KENNEDY TOWN (BELCHER BAY)+LAI CHI KOK": {
             "bound": {
                 "ctb": "O",
@@ -310203,90 +310197,6 @@
                     "85060261088757CD",
                     "B0764B3D836822DE",
                     "82F73F339C0E0E45"
-                ]
-            }
-        },
-        "904+1+Siu Hong+Tin Wing": {
-            "bound": {
-                "lightRail": "I"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Tin Wing",
-                "zh": "\u5929\u69ae"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "route": "904",
-            "seq": 11,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR100",
-                    "LR350",
-                    "LR360",
-                    "LR370",
-                    "LR380",
-                    "LR425",
-                    "LR445",
-                    "LR448",
-                    "LR460",
-                    "LR490",
-                    "LR500"
-                ]
-            }
-        },
-        "904+1+Tuen Mun Ferry Pier+Siu Hong": {
-            "bound": {
-                "lightRail": "O"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Tuen Mun Ferry Pier",
-                "zh": "\u5c6f\u9580\u78bc\u982d"
-            },
-            "route": "904",
-            "seq": 15,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR001",
-                    "LR010",
-                    "LR015",
-                    "LR020",
-                    "LR030",
-                    "LR040",
-                    "LR050",
-                    "LR060",
-                    "LR295",
-                    "LR300",
-                    "LR310",
-                    "LR320",
-                    "LR330",
-                    "LR340",
-                    "LR100"
                 ]
             }
         },
@@ -311102,50 +311012,6 @@
                     "32744B2FF962A824",
                     "4A182203F1AD6C2E",
                     "8FC6D695940F0933"
-                ]
-            }
-        },
-        "905+1+Tuen Mun Ferry Pier+Siu Hong": {
-            "bound": {
-                "lightRail": "O"
-            },
-            "co": [
-                "lightRail"
-            ],
-            "dest": {
-                "en": "Siu Hong",
-                "zh": "\u5146\u5eb7"
-            },
-            "fares": null,
-            "faresHoliday": null,
-            "freq": null,
-            "gtfsId": null,
-            "jt": null,
-            "nlbId": null,
-            "orig": {
-                "en": "Tuen Mun Ferry Pier",
-                "zh": "\u5c6f\u9580\u78bc\u982d"
-            },
-            "route": "905",
-            "seq": 15,
-            "serviceType": "1",
-            "stops": {
-                "lightRail": [
-                    "LR001",
-                    "LR010",
-                    "LR015",
-                    "LR020",
-                    "LR030",
-                    "LR040",
-                    "LR050",
-                    "LR060",
-                    "LR295",
-                    "LR300",
-                    "LR310",
-                    "LR320",
-                    "LR330",
-                    "LR340",
-                    "LR100"
                 ]
             }
         },
@@ -422021,6 +421887,50 @@
                     "002928",
                     "002929",
                     "003329"
+                ]
+            }
+        },
+        "SPR+1+Tin Yat+Siu Hong": {
+            "bound": {
+                "lightRail": "O"
+            },
+            "co": [
+                "lightRail"
+            ],
+            "dest": {
+                "en": "Siu Hong",
+                "zh": "\u5146\u5eb7"
+            },
+            "fares": null,
+            "faresHoliday": null,
+            "freq": null,
+            "gtfsId": null,
+            "jt": null,
+            "nlbId": null,
+            "orig": {
+                "en": "Tin Yat",
+                "zh": "\u5929\u9038"
+            },
+            "route": "SPR",
+            "seq": 15,
+            "serviceType": "1",
+            "stops": {
+                "lightRail": [
+                    "LR550",
+                    "LR480",
+                    "LR468",
+                    "LR490",
+                    "LR500",
+                    "LR455",
+                    "LR450",
+                    "LR435",
+                    "LR430",
+                    "LR425",
+                    "LR380",
+                    "LR370",
+                    "LR360",
+                    "LR350",
+                    "LR100"
                 ]
             }
         },
